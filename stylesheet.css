@@ -1,0 +1,289 @@
+body {
+    font-family: "Montserrat";
+  }
+  
+  
+  .header {
+    background-color: #26d0c9;
+    color: #fff;
+    height: 90px;
+  }
+  
+  .header-logo {
+    float: left;
+    font-size: 36px;
+    /* Ubahlah padding atas & bawah ke 20px, dan padding kiri & kanan ke 40px */
+    padding:20px 40px 20px 40px;
+  }
+  .header-list {
+    float: left;
+    font-size: 30px;
+    /* Ubahlah padding atas & bawah ke 20px, dan padding kiri & kanan ke 40px */
+    padding:20px 40px 20px 40px;
+  }
+  .main {
+    background-color: #024942;
+    height: auto;
+  }
+  .top-wrapper{
+	padding-top: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
+	color: white;
+}
+
+.top-wrapper h3{
+	text-align: center;
+}
+
+.progress{
+	height: 30px;
+	width: 100%;
+	background-color: #ffffff;
+	border-radius: 33px;
+	position: relative;
+	color: rgb(7, 199, 212);
+}
+
+.value{
+	background-color: rgb(108, 119, 129);
+	display: inline-block;
+	height: 100%;
+	border-radius: 33px
+}
+
+.progress::before{
+	content: attr(data-label);
+	font-size: 20px;
+	font-weight: bold;
+	position: absolute;
+	text-align: center;
+	left: 0;
+	right: 0;
+	top: 5px;
+}
+.judul h1{
+    position: relative;
+    bottom: 200px;
+}
+  .wrapper{
+    width: 450px;
+    height: 500px;
+    margin-top: 20px;
+	text-align: center;
+  }
+  .keterangan{
+      color: #fff;
+      font-size: 26px;
+      position: relative;
+      left: 355px; bottom:-250px
+  }
+  img{
+    padding-top: 100px;
+    margin-top: 50px;
+    height: auto;
+    width: 20%;
+    position: absolute;
+
+  }
+  img#bulb-on{
+    opacity: 0;
+    animation: glow 3s linear infinite;
+  }
+  @keyframes glow {
+    0%{
+      opacity: 1;
+    }
+    5%{
+      opacity: 1;
+    }
+    70%{
+      opacity: 1;
+    }
+    74%{
+      opacity: 1;
+    }
+    80%{
+      opacity: 1;
+    }
+    84%{
+      opacity: 1;
+    }
+    90%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  .btn{
+    padding: 12px 24px;
+	color: white;
+	opacity: 0.8;
+	border-radius: 44px;
+	cursor: pointer;
+	font-weight: bold;
+    transform: translateX(-50%);
+    position: relative;
+    left: 500px; bottom: -250px;
+  }
+  .btn span{
+    height: 50px;
+    width: 180px;
+    display: block;
+    text-align: center;
+    line-height: 48px;
+    background:none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .btn span:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(3, 0, 0);
+  }
+  #btn:checked ~ .btn span{
+    background: #fff;
+    color: #111;
+  }
+  .btn span:before{
+    content: "Matikan";
+  }
+  #btn:checked ~ img#bulb-on{
+    animation: none;
+  }
+  #btn:checked ~ .btn span:before{
+    content: "Nyalakan";
+  }
+  .wrapper input{
+    display: none;
+  }
+  .wrapper1{
+    width: 450px;
+    height: 500px;
+    margin-top: 20px;
+	text-align: center;
+  }
+  .keterangan1{
+      color: #fff;
+      font-size: 26px;
+      position: relative;
+      left: 385px; bottom:-250px
+  }
+  img{
+    padding-top: 100px;
+    margin-top: 50px;
+    height: auto;
+    width: 20%;
+    position: absolute;
+
+
+  }
+  img#kipas-on{
+    opacity: 0;
+    animation: glow 3s linear infinite;
+  }
+  @keyframes glow {
+    0%{
+      opacity: 1;
+    }
+    5%{
+      opacity: 1;
+    }
+    70%{
+      opacity: 1;
+    }
+    74%{
+      opacity: 1;
+    }
+    80%{
+      opacity: 1;
+    }
+    84%{
+      opacity: 1;
+    }
+    90%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  .btn1{
+    padding: 12px 24px;
+	color: white;
+	opacity: 0.8;
+	border-radius: 44px;
+	cursor: pointer;
+	font-weight: bold;
+    transform: translateX(-50%);
+    position: relative;
+    left: 500px; bottom: -250px;
+  }
+  .btn1 span{
+    height: 50px;
+    width: 180px;
+    display: block;
+    text-align: center;
+    line-height: 48px;
+    background:none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .btn1 span:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(3, 0, 0);
+  }
+  #btn1:checked ~ .btn1 span{
+    background: #fff;
+    color: #111;
+  }
+  .btn1 span:before{
+    content: "Matikan";
+  }
+  #btn1:checked ~ img#kipas-on{
+    animation: none;
+  }
+  #btn1:checked ~ .btn1 span:before{
+    content: "Nyalakan";
+  }
+  .wrapper input{
+    display: none;
+  }
+  
+  .footer {
+    background-color: #2f5167;
+    
+    
+    color:#fff;
+    height: 120px;
+    padding:40px;
+    
+  }
+  
+  /* Gantikan font-size dan property float footer-logo */
+  .footer-logo{
+    font-size:32px;
+    float:left;
+  }
+  
+  
+  /* Gantikan float property footer-list */
+  .footer-list{
+    float:right;
+  }
+  
+  /* Tambahkan CSS untuk tag <li> kedalam footer-list */
+  .footer-list li{
+    padding-bottom:20px;
+  }
+  
